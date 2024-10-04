@@ -3,21 +3,6 @@ import pandas as pd
 
 # ------ PART 1 ------
 
-df = pd.DataFrame(
-    [
-       {"command": "st.selectbox", "rating": 4, "is_widget": True},
-       {"command": "st.balloons", "rating": 5, "is_widget": False},
-       {"command": "st.time_input", "rating": 3, "is_widget": True},
-   ]
-)
-
-# Display text
-st.text('Fixed width text')
-st.markdown('_**Markdown**_') # see #*
-st.caption('Balloons. Hundreds of them...')
-st.latex(r''' e^{i\pi} + 1 = 0 ''')
-st.write('Most objects') # df, err, func, keras!
-st.write(['st', 'is <', 3]) # see *
 
 # TITLE
 st.title('Problematic Internet Use - Group 20 Project Proposal')
@@ -27,8 +12,9 @@ st.title('Problematic Internet Use - Group 20 Project Proposal')
 st.header('Introduction')
 st.subheader('Literature Review')
 url1 = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7330165/"
-st.write('[This paper](%s) explores the impacts of physical fitness on reducing internet addiction. The paper finds that physical activity can cause key changes in brain chemistry concerning internet addiction. Specifically, they find that fitness can improve things like attention span and dopamine production, which can be correlated with addiction.' % url)
-st.code('for i in range(8): foo()')
+st.write('[This paper](%s) explores the impacts of physical fitness on reducing internet addiction. The paper finds that physical activity can cause key changes in brain chemistry concerning internet addiction. Specifically, they find that fitness can improve things like attention span and dopamine production, which can be correlated with addiction.' % url1)
+url2 = "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-18474-1"
+st.write('[This paper](%s) argues that there is a strong case for the negative relationship between physical activity and internet addiction. Specifically, they find that p<0.01 for the relationship between physical activity and internet addiction.' % url2)
 
 # * optional kwarg unsafe_allow_html = True
 
