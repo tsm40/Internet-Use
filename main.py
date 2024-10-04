@@ -12,9 +12,9 @@ st.title('Problematic Internet Use - Group 20 Project Proposal')
 st.header('Introduction')
 st.subheader('Literature Review')
 url1 = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7330165/"
-st.write('[This paper](%s) explores the impacts of physical fitness on reducing internet addiction. The paper finds that physical activity can cause key changes in brain chemistry concerning internet addiction. Specifically, they find that fitness can improve things like attention span and dopamine production, which can be correlated with addiction.' % url1)
+st.write('[This paper](%s) explores the impacts of physical fitness on reducing internet addiction. The paper finds that physical activity can cause key changes in brain chemistry concerning internet addiction. Specifically, they find that fitness can improve things like attention span and dopamine production, which can be correlated with addiction. \[1\]' % url1)
 url2 = "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-18474-1"
-st.write('[This paper](%s) argues that there is a strong case for the negative relationship between physical activity and internet addiction. Specifically, they find that p<0.01 for the relationship between physical activity and internet addiction.' % url2)
+st.write('[This paper](%s) argues that there is a strong case for the negative relationship between physical activity and internet addiction. Specifically, they find that p<0.01 for the relationship between physical activity and internet addiction. \[2\]' % url2)
 
 st.subheader('Dataset Description')
 st.write('The Dataset we chose was the Child Mind Institute - Problematic Internet Use data set. The data set provides physical activity markers as well as internet usage markers. The fitness markers are based on fitness gram measurements, sleep disturbance, and bioelectric markers. The dataset measures internet usage through total internet usage and an internet addiction scale called the Severity Impairment Index (`sii`).')
@@ -47,3 +47,7 @@ st.write('*Silhouette Coefficient:* Evaluate the clustering quality of Fuzzy K-M
 
 st.subheader('Project Goals and Expected Results')
 st.write('We hope to achieve an accuracy score of 0.7 or higher for these metrics ability to predict `sii` but anticipate that attributes like physical activity levels and bioelectric signals can overlap in terms of impact on internet use, leading to misclassification. Thus, we expect subgroups with different disturbance or stress levels to be difficult to differentiate. Therefore, we will use confusion matrices to identify patterns where the model struggles most.')
+
+st.header('References')
+st.write('\[1\] A. Restrepo et al., “Problematic internet use in children and adolescents: associations with psychiatric disorders and impairment,” BMC Psychiatry, vol. 20, no. 1, May 2020, doi: https://doi.org/10.1186/s12888-020-02640-x.')
+st.write('\[2\] F. W. Paulus et al., “Problematic Internet Use among Adolescents 18 Months after the Onset of the COVID-19 Pandemic,” Children, vol. 9, no. 11, p. 1724, Nov. 2022, doi: https://doi.org/10.3390/children9111724.')
