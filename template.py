@@ -18,16 +18,9 @@ st.caption('Balloons. Hundreds of them...')
 st.latex(r''' e^{i\pi} + 1 = 0 ''')
 st.write('Most objects') # df, err, func, keras!
 st.write(['st', 'is <', 3]) # see *
-
-# TITLE
-st.title('Problematic Internet Use - Group 20 Project Proposal')
-
-
-
-st.header('Introduction')
-st.subheader('Literature Review')
-url1 = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7330165/"
-st.write('[This paper](%s) explores the impacts of physical fitness on reducing internet addiction. The paper finds that physical activity can cause key changes in brain chemistry concerning internet addiction. Specifically, they find that fitness can improve things like attention span and dopamine production, which can be correlated with addiction.' % url)
+st.title('My title')
+st.header('My header')
+st.subheader('My sub')
 st.code('for i in range(8): foo()')
 
 # * optional kwarg unsafe_allow_html = True
@@ -64,7 +57,8 @@ st.download_button(
 )
 # -- add download button (end) --
 
-
+st.camera_input("一二三,茄子!")
+st.color_picker('Pick a color')
 
 # ------ PART 2 ------
 
@@ -78,3 +72,20 @@ st.metric('My metric', 42, 2)
 
 # Media
 st.image('./smile.png')
+
+# Display Charts
+st.area_chart(data[:10])
+st.bar_chart(data[:10])
+st.line_chart(data[:10])
+# st.map(data[:10])
+st.scatter_chart(data[:10])
+
+# Add sidebar
+a = st.sidebar.radio('Select one:', [1, 2])
+st.sidebar.caption("This is a cool caption")
+st.sidebar.image('./smile.png')
+
+# Add columns
+col1, col2 = st.columns(2)
+col1.write("This is column 1")
+col2.write("This is column 2")
