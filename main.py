@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 
-# ------ PART 1 ------
+st.set_page_config(page_title = "Physical Activity's Influence on Internet Addiction - Group 20 Project Proposal")
 
 
 # TITLE
-st.title('Problematic Internet Use - Group 20 Project Proposal')
+st.title("Physical Activity's Influence on Internet Addiction - Group 20 Project Proposal")
 
 
 
