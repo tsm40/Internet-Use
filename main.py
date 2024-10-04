@@ -47,6 +47,7 @@ st.write('*Silhouette Coefficient:* Evaluate the clustering quality of Fuzzy K-M
 
 st.subheader('Project Goals and Expected Results')
 st.write('We hope to achieve an accuracy score of 0.7 or higher for these metrics ability to predict `sii` but anticipate that attributes like physical activity levels and bioelectric signals can overlap in terms of impact on internet use, leading to misclassification. Thus, we expect subgroups with different disturbance or stress levels to be difficult to differentiate. Therefore, we will use confusion matrices to identify patterns where the model struggles most.')
+st.link_button("Gaant Chart", "https://docs.google.com/spreadsheets/d/1NzZaNOShu23aP_18EbaMfo7mWibpnGhX/edit?usp=sharing&ouid=111674034097172792134&rtpof=true&sd=true")
 
 st.header('References')
 st.write('\[1\] A. Restrepo et al., “Problematic internet use in children and adolescents: associations with psychiatric disorders and impairment,” BMC Psychiatry, vol. 20, no. 1, May 2020, doi: https://doi.org/10.1186/s12888-020-02640-x.')
