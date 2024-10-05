@@ -15,6 +15,8 @@ url1 = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7330165/"
 st.write('[This paper](%s) explores the impacts of physical fitness on reducing internet addiction. The paper finds that physical activity can cause key changes in brain chemistry concerning internet addiction. Specifically, they find that fitness can improve things like attention span and dopamine production, which can be correlated with addiction. \[1\]' % url1)
 url2 = "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-18474-1"
 st.write('[This paper](%s) argues that there is a strong case for the negative relationship between physical activity and internet addiction. Specifically, they find that p<0.01 for the relationship between physical activity and internet addiction. \[2\]' % url2)
+url3 = "https://www.mdpi.com/2227-9067/9/11/1724"
+st.write('[This paper](%s) This paper looks at the rise of problematic internet use (PIU) of adolescents 18 months after the start of the Covid-19 pandemic. Participants in an experiment this paper examined filled out the Short Compulsive Internet Use Scale (SCUIS) and 2 other items to observe a change in time usage of digital media. This paper finds that besides gender and age, the amount of time spent on digital media during the pandemic significantly impacts PIU. \[3\]' % url3)
 
 st.subheader('Dataset Description')
 st.write('The Dataset we chose was the Child Mind Institute - Problematic Internet Use data set. The data set provides physical activity markers as well as internet usage markers. The fitness markers are based on fitness gram measurements, sleep disturbance, and bioelectric markers. The dataset measures internet usage through total internet usage and an internet addiction scale called the Severity Impairment Index (`sii`).')
@@ -50,10 +52,10 @@ st.write('We hope to achieve an accuracy score of 0.7 or higher for these metric
 st.link_button("Gaant Chart", "https://docs.google.com/spreadsheets/d/1NzZaNOShu23aP_18EbaMfo7mWibpnGhX/edit?usp=sharing&ouid=111674034097172792134&rtpof=true&sd=true")
 
 
-df = pd.DataFrame([['Chen Ye', 'Video'], ['Matthew Lei', 'Methods'], ['Eric Ma', 'Dataset'], ['Tiffany Ma', 'GitHub/Streamlit'], ['Kevin Song', 'References']], columns = ["Team Member", "Proposal Contributions"])
+df = pd.DataFrame([['Chen Ye', 'Video'], ['Matthew Lei', 'Methods'], ['Eric Ma', 'Dataset'], ['Tiffany Ma', 'GitHub/Streamlit'], ['Kevin Song', 'Introduction/Background']], columns = ["Team Member", "Proposal Contributions"])
 st.table(df)
 
 st.header('References')
-st.write('\[1\] A. Restrepo et al., “Problematic internet use in children and adolescents: associations with psychiatric disorders and impairment,” BMC Psychiatry, vol. 20, no. 1, May 2020, doi: https://doi.org/10.1186/s12888-020-02640-x.')
-st.write('\[2\] F. W. Paulus et al., “Problematic Internet Use among Adolescents 18 Months after the Onset of the COVID-19 Pandemic,” Children, vol. 9, no. 11, p. 1724, Nov. 2022, doi: https://doi.org/10.3390/children9111724.')
-st.write('\[3\] B. Xiao, N. Parent, L. Rahal, and J. Shapka, “Using Machine Learning to Explore the Risk Factors of Problematic Smartphone Use among Canadian Adolescents during COVID-19: The Important Role of Fear of Missing Out (FoMO),” Applied Sciences, vol. 13, no. 8, pp. 4970–4970, Apr. 2023, doi: https://doi.org/10.3390/app13084970.')
+st.write('\[1\] S. Li, Q. Wu, C. Tang, Z. Chen, and L. Liu, “Exercise-Based Interventions for Internet Addiction: Neurobiological and Neuropsychological Evidence,” Frontiers in Psychology, vol. 11, Jun. 2020, doi: https://doi.org/10.3389/fpsyg.2020.01296.')
+st.write('\[2\] Du Zhihao, W. Tao, S. Yingjie, and Z. Feng, “The influence of physical activity on internet addiction among Chinese college students: the mediating role of self-esteem and the moderating role of gender,” BMC public health, vol. 24, no. 1, Apr. 2024, doi: https://doi.org/10.1186/s12889-024-18474-1.')
+st.write('\[3\] F. W. Paulus et al., “Problematic Internet Use among Adolescents 18 Months after the Onset of the COVID-19 Pandemic,” Children, vol. 9, no. 11, p. 1724, Nov. 2022, doi: https://doi.org/10.3390/children9111724.')
