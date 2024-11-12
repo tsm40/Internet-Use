@@ -7,19 +7,20 @@ st.set_page_config(page_title = "Physical Activity's Influence on Internet Addic
 # TITLE
 st.title("Physical Activity's Influence on Internet Addiction - Group 20 Midterm Report")
 
-
+url1 = "https://github.com/tsm40/Internet-Use"
+st.write("[GitHub link](%s)"%url1)
 
 st.header('Data Preprocessing')
 
 st.subheader('Data Exploration')
 st.write("We first examined the data we were working with to get a general sense of what features should be used for training and what preprocessing needed to be done. We noticed that the target variable SII value has a very uneven distribution, which we must keep in mind for the interpretability of our models. Other things of note were that our dataset contained many null values, which necessitates imputation. Finally, there was a significant portion of the data containing the exact values of the answers to the PCIAT questionnaire, which directly contributes to the mathematical calculation of the SII values. Thus, we decided to manually remove these columns so that our models will not be influenced by those direct values and instead will be trained more intelligently on more biometric data.")
-st.image("Figures/distribution.png")
+st.image("Figures/distribution.png", caption="SII value category distribution in training dataset.")
 st.subheader('Manual Feature Selection/Hand-Engineered Features')
 st.write("The dataset contains many repetitive columns, such as weight, height, and BMI. By manually deleting redundant features (like height and weight due to having a BMI column), we created a more streamlined and useful dataset.")
 st.subheader('Filling Missing Data')
 st.write("Since our dataset had a lot of missing values, we needed to fill them in strategically. First, we removed columns with more than 50% missing values. Next, we filled in missing data with average values, but to improve precision, we experimented with other imputation methods, like linear regression. However, linear regression can sometimes produce values outside the expected range. We then adjusted our approach by selecting more suitable predictor variables or exploring alternative imputation methods.")
 st.subheader("PCA for Dimensionality Reduction")
-st.write("PCA was used to reduce the dimensionality of our original dataset. By setting an appropriate threshold of 90% accuracy, we retained 21 principal components (PCs). This significantly reduced the features from the original 51, thus resulting in a more manageable dataset.")
+st.write("PCA was used to reduce the dimensionality of our original dataset. By setting an appropriate threshold of 90% accuracy, we retained 21 principal components (PCs) composed of 42 features. This significantly reduced the number of features to focus on, thus resulting in a more manageable dataset.")
 col1, col2 = st.columns(2)
 with col1:
     st.image("Figures/CEV_PCA.png")
