@@ -18,7 +18,7 @@ df = df.iloc[1:].reset_index(drop=True)
 
 #Select top 5 pca features
 trainCols = [78, 41, 11, 17, 80]
-df = df = df.dropna(subset=[df.columns[78], df.columns[41], df.columns[81], df.columns[11], df.columns[17],df.columns[80]])
+f = df = df.dropna(subset=[df.columns[78], df.columns[41], df.columns[81], df.columns[11], df.columns[17],df.columns[80]])
 label = 81
 
 X = df[trainCols].astype(float).values.tolist()
@@ -29,6 +29,16 @@ print("Category 0", y.count(0))
 print("Category 1", y.count(1))
 print("Category 2", y.count(2))
 print("Category 3", y.count(3))
+
+counts = [y.count(0), y.count(1), y.count(2), y.count(3)]
+categories = ["Category 0", "Category 1", "Category 2", "Category 3"]
+
+# Creating the bar graph
+plt.bar(categories, counts, color='skyblue')
+plt.xlabel('Categories')
+plt.ylabel('Counts')
+plt.title('Counts per Category')
+plt.show()
 
 #split data
 X_train, X_test, y_train, y_test = train_test_split(X[1:], y[1:], test_size=0.25, random_state=16)
