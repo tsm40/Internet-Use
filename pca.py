@@ -52,7 +52,6 @@ Visualization
 import matplotlib.pyplot as plt
 
 
-# Select only the top `num_components` columns from `eigenvectors_sorted`
 loadings = pd.DataFrame(eigenvectors_sorted[:, :num_components].numpy(), 
                         index=X.columns, 
                         columns=[f'PC{i+1}' for i in range(num_components)])
@@ -60,18 +59,16 @@ loadings = pd.DataFrame(eigenvectors_sorted[:, :num_components].numpy(),
 
 
 top_n_features = 5
-unique_features = set()  # Set to store unique feature names
+unique_features = set()
 
-for i in range(num_components):  # Iterate through the top 21 PCs
+for i in range(num_components):
     pc = f'PC{i+1}'
     print(f"\nTop {top_n_features} contributing features to {pc}:")
     top_features = loadings[pc].abs().sort_values(ascending=False).head(top_n_features)
     print(top_features)
-    
-    # Add these top feature names to the unique_features set
+
     unique_features.update(top_features.index)
 
-# Convert the set to a sorted list for a consistent display
 unique_features_list = sorted(unique_features)
 print("\nUnique features contributing to the top 21 PCs:")
 print(unique_features_list)
