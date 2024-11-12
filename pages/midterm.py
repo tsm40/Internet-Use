@@ -30,7 +30,7 @@ st.header('Results and Discussion')
 logreg_tab, fuzzy_tab = st.tabs(["Logistic Regression", "Fuzzy K-means Clustering"])
 with logreg_tab:
     st.subheader("Model Results")
-    st.image("Figures/logreg_cof.png", caption="Logistic regression confusion matrix.")
+    st.image("Figures/logreg_conf.png", caption="Logistic regression confusion matrix.")
     st.write("Accuracy: 39.7%")
     st.write("Precision: macro: 23.7%, weighted: 42.2%")
     st.write("Recall: macro: 21%, weighted: 39.7%")
