@@ -25,3 +25,5 @@ https://internet-use.streamlit.app/
 `pages`: Streamlit secondary pages
 
 `pages/midterm.py`: Streamlit midterm report
+
+`NeuralNet`:Folder containg code, data, and helpers for Neural network code
