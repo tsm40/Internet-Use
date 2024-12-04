@@ -24,7 +24,7 @@ st.write("Because the original dataset was very skewed towards the 0 range of SI
 st.subheader("PCA for Dimensionality Reduction")
 st.write("PCA was used to reduce the dimensionality of our original dataset. By setting an appropriate threshold of 90% accuracy, we retained 13 principal components (PCs) on the training dataset. We then fit the training and testing data to these loadings and generated new training and testing datasets. This significantly reduced the number of features to focus on, thus resulting in more manageable data.")
 
-st.image("Figures/PCANEW.png")
+# st.image("Figures/PCANEW.png")
 
 st.header('ML Algorithms/Models Implemented')
 
