@@ -21,6 +21,8 @@ st.subheader('Filling Missing Data')
 st.write("For most columns, such as PCIAT-PCIAT and BIA BIA set data, we filled missing values with the average of the existing data. For some columns, like the CGAS-CGAS score, we used linear regression to predict the missing values based on other related features, including BIA-BIA_BMI, BIA-BIA_BMR, BIA-BIA_DEE, and BIA-BIA_TBW.")
 st.subheader("PCA for Dimensionality Reduction")
 st.write("We applied Principal Component Analysis (PCA) to reduce the dimensionality of our original dataset. By setting an appropriate threshold of 90% explained variance, we retained 31 principal components (PCs), which significantly reduced the number of features from 82 to a more manageable set.")
+st.subheader("Smote")
+st.write("Because the original dataset was very skewed towards the 0 range of SII values, we used SMOTE to resample the dataset after value imputation. This allowed for much better predictions for less represented classes.")
 col1, col2 = st.columns(2)
 with col1:
     st.image("Figures/CEV_PCA.png")
