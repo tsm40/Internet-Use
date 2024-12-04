@@ -2,8 +2,7 @@ import torch
 import pandas as pd
 
 # loading data
-data = pd.read_csv('train.csv')
-data = data.drop(columns=['id', 'Basic_Demos-Enroll_Season', 'CGAS-Season', 'Physical-Season', 'Fitness_Endurance-Season', 'FGC-Season', 'BIA-Season', 'PAQ_A-Season', 'PAQ_C-Season', 'PCIAT-Season', 'SDS-Season', 'PreInt_EduHx-Season'])                  # dropping categorical data
+data = pd.read_csv('train_new.csv')
 data = data.drop(columns=data.filter(regex="^PCIAT").columns)               # dropping PCIAT question columns
 data = data.fillna(data.mean())
 data = data.dropna(subset=['sii'])
