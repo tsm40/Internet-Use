@@ -10,7 +10,7 @@ https://internet-use.streamlit.app/
 
 `fuzzyKMeans.ipynb`: Fuzzy K-Means Clustering code
 
-`Data`: Training and testing data
+`Data`: Training\testing data and Filled Training\testing data
 
 `Data/train_data.csv`: Training data
 
