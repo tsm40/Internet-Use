@@ -18,9 +18,6 @@ st.image("Figures/distribution.png", caption="SII value category distribution in
 st.subheader('Manual Feature Selection/Hand-Engineered Features')
 st.write("The dataset contains many repetitive columns, such as weight, height, and BMI. By manually deleting redundant features (like height and weight due to having a BMI column), we created a more streamlined and useful dataset.")
 st.subheader('Filling Missing Data')
-st.write("Since our dataset had a lot of missing values, we needed to fill them in strategically. First, we removed columns with more than 50% missing values. Next, we filled in missing data with average values, but to improve precision, we experimented with other imputation methods, like linear regression. However, linear regression can sometimes produce values outside the expected range. We then adjusted our approach by selecting more suitable predictor variables or exploring alternative imputation methods.")
-st.subheader("PCA for Dimensionality Reduction")
-st.write("PCA was used to reduce the dimensionality of our original dataset. By setting an appropriate threshold of 90% accuracy, we retained 21 principal components (PCs) composed of 42 features. This significantly reduced the number of features to focus on, thus resulting in a more manageable dataset.")
 col1, col2 = st.columns(2)
 with col1:
     st.image("Figures/CEV_PCA.png")
