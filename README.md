@@ -8,7 +8,7 @@ https://internet-use.streamlit.app/
 
 `regression.py`: Logistic Regression code
 
-`fuzzyKMeans.ipynb`: Fuzzy K-Means Clustering code
+`fuzzyKMeans.ipynb/fuzzyKMeans.py`: Fuzzy K-Means Clustering code
 
 `Data`: Training\testing data and Filled Training\testing data
 
